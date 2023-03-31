@@ -4,27 +4,12 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-.textContent {
-  color: white;
-  width: 50%;
-  text-align: left;
-}
-.tvContent {
-  width: 50%;
-  position: relative;
-  max-width: 600px;
-  margin: auto;
-}
-.principalText {
-  font-size: 3rem;
-  font-weight: 900;
-}
-.secondaryText {
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-.firstSec {
+
+/* TV section */
+
+.tvSection {
   background-color: black;
+  border-top: 9px solid #222;
   border-bottom: 9px solid #222;
   height: 550px;
 }
@@ -35,13 +20,27 @@
   max-width: 1100px;
   margin: 0 auto;
 }
-#tv-video {
-  position: absolute;
-  top: 48%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 87%;
-  height: 55%;
+.textContent {
+  color: white;
+  width: 50%;
+  text-align: left;
+  padding-top: 40px;
+}
+
+.principalText {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.secondaryText {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.tvContent {
+  width: 50%;
+  position: relative;
+  max-width: 600px;
+  margin: auto;
 }
 .tvContent img {
   width: 100%;
@@ -50,7 +49,18 @@
   position: relative;
 }
 
+#tv-video {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 87%;
+  height: 55%;
+}
+
 @media (max-width: 960px) {
+  /*Media queries TV*/
+
   .container1 {
     display: flex;
     flex-direction: column;
@@ -60,10 +70,11 @@
   .textContent {
     width: 100%;
     text-align: center;
+    font-family: sans-serif;
   }
   .principalText {
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 900;
   }
   .secondaryText {
     margin-top: 16px;
@@ -73,4 +84,88 @@
   .tvContent {
     width: 100%;
   }
+
+  /*Media queries computer*/
+
+  .container2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0 2vw 0 2vw;
+  }
+
+  .textContent2 {
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  .principalText2 {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  .secondaryText2 {
+    margin-top: 16px;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+
+  .computerContent {
+    width: 100%;
+  }
+}
+
+/* Computer section*/
+
+.computerSection {
+  background-color: black;
+  border-bottom: 9px solid #222;
+  height: 550px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.textContent2 {
+  color: white;
+  width: 50%;
+  text-align: left;
+  padding-top: 40px;
+}
+
+.principalText2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.secondaryText2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.computerContent {
+  width: 50%;
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+.computerContent img {
+  width: 100%;
+  z-index: 10;
+  max-width: 600px;
+  position: relative;
+}
+
+#computer-video {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  width: 87%;
+  height: 48%;
 }

@@ -1,31 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Netflix Italia - Guarda serie TV online, Guarda film online</title>
-  </head>
-  <body>
-    <main>
-      <section class="firstSec">
-        <div class="container1">
-          <div class="textContent">
-            <h2 class="principalText">Goditi Netflix sulla tua TV.</h2>
-            <p class="secondaryText">
-              Guarda Netflix su smart TV, Playstation, Xbox, Chromecast, Apple
-              TV, lettori Blu-ray e molti altri dispositivi.
-            </p>
-          </div>
-          <div class="tvContent">
-            <img src="tv.png" alt="tv" />
-            <video autoplay loop muted id="tv-video">
-              <source src="video1.m4v" type="video/mp4" />
-            </video>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Netflix Italia - Guarda serie TV online, Guarda film online</title>
+</head>
+
+<body>
+  <div>
+
+    <section class="tvSection">
+      <div class="container1">
+        <div class="textContent">
+          <h2 class="principalText">Goditi Netflix sulla tua TV.</h2>
+          <p class="secondaryText">
+            Guarda Netflix su smart TV, Playstation, Xbox, Chromecast, Apple
+            TV, lettori Blu-ray e molti altri dispositivi.
+          </p>
         </div>
-      </section>
-    </main>
-  </body>
+        <div class="tvContent">
+          <img src="assets/tv.png" alt="tv" />
+          <video autoplay loop muted id="tv-video">
+            <source src="assets/video1.m4v" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="computerSection">
+      <div class="container2">
+        <div class="computerContent">
+          <img src="assets/computer.png" alt="pc">
+          <video autoplay loop muted id="computer-video" src="assets/video2.mp4"></video>
+        </div>
+        <div class="textContent2">
+          <h2 class="principalText2">Guarda Netflix ovunque.</h2>
+          <p class="secondaryText2">Cellulare, tablet, laptop e TV: scegli tu cosa usare per guardare in streaming Film
+            e serie TV senza limiti e senza spendere di più</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="kids">
+      <div class="container3">
+        <div class="textContent3">
+          <h2 class="principalText3"></h2>
+          <p class="secondaryText3"></p>
+        </div>
+        <div class="kidsContent">
+          <img src="" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="phoneSection">
+      <div class="container4">
+        <div class="textContent4">
+          <h2 class="principalText4"></h2>
+          <p class="secondaryText4"></p>
+        </div>
+        <div class="phoneContent">
+          <img src="" alt="">
+          <video autoplay loop muted id="phone-video" src=""></video>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</body>
+
 </html>

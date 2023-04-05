@@ -1,85 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Netflix Italia - Guarda serie TV online, Guarda film online</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Netflix Italia - Guarda serie TV online, Guarda film online</title>
-</head>
-
-<body>
-  <div>
-
-    <section class="tvSection">
-      <div class="container1">
-        <div class="textContent">
-          <h2 class="principalText">Goditi Netflix sulla tua TV.</h2>
-          <p class="secondaryText">
-            Guarda Netflix su smart TV, Playstation, Xbox, Chromecast, Apple
-            TV, lettori Blu-ray e molti altri dispositivi.
-          </p>
-        </div>
-        <div class="tvContent">
-          <img src="assets/tv.png" alt="tv" />
-          <video autoplay loop muted id="tv-video">
-            <source src="assets/video1.m4v" type="video/mp4" />
-          </video>
-        </div>
-      </div>
-    </section>
-
-    <section class="computerSection">
-      <div class="container2">
-        <div class="computerContent">
-          <img src="assets/computer.png" alt="pc">
-          <video autoplay loop muted id="computer-video" src="assets/video2.mp4"></video>
-        </div>
-        <div class="textContent2">
-          <h2 class="principalText2">Guarda Netflix ovunque.</h2>
-          <p class="secondaryText2">Cellulare, tablet, laptop e TV: scegli tu cosa usare per guardare in streaming Film
-            e serie TV senza limiti e senza spendere di più</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="kidsSection">
-      <div class="container3">
-        <div class="textContent3">
-          <h2 class="principalText3">Crea profili per i bambini.</h2>
-          <p class="secondaryText3">I bambini scoprono nuove avventure in compagnia dei loro personaggi preferiti in uno
-            spazio tutto loro già incluso nel
-            tuo abbonamento.</p>
-        </div>
-        <div class="kidsContent">
-          <img src="assets/kids.png" alt="Some kids and a bunny">
-        </div>
-      </div>
-    </section>
-
-    <section class="phoneSection">
-      <div class="container4">
-        <div class="phoneContent">
-          <img src="assets/smartphone.jpg" alt="A smartphone">
-          <div class="container_box">
-            <div class="boxPoster">
-              <img id="box_img" src="assets/boxshot.png" alt="A movie poster">
-            </div>
-            <div class="box_text">
-              <div class="box_text1">Stranger Things</div>
-              <div class="box_text2">Download in corso...</div>
-            </div>
+  <body>
+    <div>
+      <section class="tvSection">
+        <div class="container1">
+          <div class="textContent">
+            <h2 class="principalText">Goditi Netflix sulla tua TV.</h2>
+            <p class="secondaryText">
+              Guarda Netflix su smart TV, Playstation, Xbox, Chromecast, Apple
+              TV, lettori Blu-ray e molti altri dispositivi.
+            </p>
+          </div>
+          <div class="tvContent">
+            <img src="assets/tv.png" alt="tv" />
+            <video autoplay loop muted id="tv-video">
+              <source src="assets/video1.m4v" type="video/mp4" />
+            </video>
           </div>
         </div>
-        <div class="textContent4">
-          <h2 class="principalText4">Scarica le tue serie da guardare offline.</h2>
-          <p class="secondaryText4">Disponibili solo nei piani senza pubblicità.</p>
+      </section>
+
+      <section class="computerSection">
+        <div class="container2">
+          <div class="computerContent">
+            <img src="assets/computer.png" alt="pc" />
+            <video
+              autoplay
+              loop
+              muted
+              id="computer-video"
+              src="assets/video2.mp4"
+            ></video>
+          </div>
+          <div class="textContent2">
+            <h2 class="principalText2">Guarda Netflix ovunque.</h2>
+            <p class="secondaryText2">
+              Cellulare, tablet, laptop e TV: scegli tu cosa usare per guardare
+              in streaming Film e serie TV senza limiti e senza spendere di più
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-  </div>
-</body>
+      <section class="kidsSection">
+        <div class="container3">
+          <div class="textContent3">
+            <h2 class="principalText3">Crea profili per i bambini.</h2>
+            <p class="secondaryText3">
+              I bambini scoprono nuove avventure in compagnia dei loro
+              personaggi preferiti in uno spazio tutto loro già incluso nel tuo
+              abbonamento.
+            </p>
+          </div>
+          <div class="kidsContent">
+            <img src="assets/kids.png" alt="Some kids and a bunny" />
+          </div>
+        </div>
+      </section>
 
+      <section class="phoneSection">
+        <div class="container4">
+          <div class="phoneContent">
+            <img src="assets/smartphone.jpg" alt="A smartphone" />
+            <div class="container_box">
+              <div class="boxPoster">
+                <img
+                  id="box_img"
+                  src="assets/boxshot.png"
+                  alt="A movie poster"
+                />
+              </div>
+              <div class="box_text">
+                <div class="box_text1">Stranger Things</div>
+                <div class="box_text2">Download in corso...</div>
+              </div>
+              <div>
+                <img id="box_gif" src="./assets/download-icon.gif" alt="Gif di
+                caricamento download"
+              </div>
+            </div>
+          </div>
+          <div class="textContent4">
+            <h2 class="principalText4">
+              Scarica le tue serie da guardare offline.
+            </h2>
+            <p class="secondaryText4">
+              Disponibili solo nei piani senza pubblicità.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>

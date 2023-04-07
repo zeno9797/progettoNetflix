@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  letter-spacing: 0 !important;
+}
+
+/* TV section */
+
+.tvSection {
+  background-color: black;
+  border-top: 9px solid #222;
+  border-bottom: 9px solid #222;
+  height: 550px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.textContent {
+  color: white;
+  width: 50%;
+  text-align: left;
+  padding-top: 40px;
+}
+
+.principalText {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.secondaryText {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.tvContent {
+  width: 50%;
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+
+.tvContent img {
+  width: 100%;
+  z-index: 10;
+  max-width: 600px;
+  position: relative;
+}
+
+#tv-video {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 87%;
+  height: 55%;
+}
+
+/* Computer section*/
+
+.computerSection {
+  background-color: black;
+  border-bottom: 9px solid #222;
+  height: 550px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.textContent2 {
+  color: white;
+  width: 50%;
+  text-align: left;
+  padding-top: 40px;
+}
+
+.principalText2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.secondaryText2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.computerContent {
+  width: 50%;
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+
+.computerContent img {
+  width: 100%;
+  z-index: 10;
+  max-width: 600px;
+  position: relative;
+}
+
+#computer-video {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  width: 87%;
+  height: 48%;
+}
+
+/* Kids */
+
+.kidsSection {
+  background-color: black;
+  border-bottom: 9px solid #222;
+  height: 550px;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.textContent3 {
+  color: white;
+  width: 50%;
+  text-align: left;
+  padding-top: 40px;
+}
+
+.principalText3 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.secondaryText3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.kidsContent {
+  width: 50%;
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+
+.kidsContent img {
+  width: 100%;
+  z-index: 10;
+  max-width: 600px;
+  position: relative;
+}
+
+/*Phone Section*/
+
+.phoneSection {
+  background-color: black;
+  border-bottom: 9px solid #222;
+  height: 550px;
+}
+
+.container4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.textContent4 {
+  color: white;
+  width: 50%;
+  text-align: left;
+  padding-top: 40px;
+}
+
+.principalText4 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.secondaryText4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.phoneContent {
+  position: relative;
+  width: 50%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.phoneContent img {
+  width: 100%;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.container_box {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  bottom: 120px;
+  width: 55%;
+  height: 100px;
+  min-width: 15rem;
+  margin: 0 auto;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 2em 0 rgba(0, 0, 0, 1);
+  border-radius: 0.75rem;
+  z-index: 1;
+}
+.box_gif {
+  width: 33%;
+}
+
+.boxPoster {
+  margin-right: 1rem;
+  flex-grow: 0;
+  width: 33%;
+}
+
+#box_img {
+  width: 3rem;
+  height: 4rem;
+}
+
+.box_text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  flex-grow: 1;
+  width: 33%;
+}
+
+.box_text1 {
+  color: white;
+  font-weight: 700;
+}
+
+.box_text2 {
+  color: blue;
+  font-weight: 200;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 960px) {
+  /*Media queries TV*/
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2vw 0 2vw;
+  }
+
+  .textContent {
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  .principalText {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  .secondaryText {
+    margin-top: 16px;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+
+  .tvContent {
+    width: 55%;
+  }
+
+  /*Media queries computer*/
+
+  .container2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0 2vw 0 2vw;
+  }
+
+  .textContent2 {
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  .principalText2 {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  .secondaryText2 {
+    margin-top: 16px;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+
+  .computerContent {
+    width: 50%;
+  }
+
+  /*Media queries Kids*/
+  .container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .textContent3 {
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  .principalText3 {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  .secondaryText3 {
+    margin-top: 16px;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+  .kidsContent {
+    width: 50%;
+  }
+  /*Media queries phoneSection*/
+  .container4 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .textContent4 {
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  .principalText4 {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  .secondaryText4 {
+    margin-top: 16px;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+  .phoneContent {
+    width: 50%;
+  }
+}
+
+@media (max-width: 720px) {
+  /*Media queries TV*/
+  .tvContent {
+    width: 70%;
+  }
+  /*Media queries computer*/
+  .computerContent {
+    width: 70%;
+  }
+  /*Media queries Kids*/
+  .kidsContent {
+    width: 70%;
+  }
+  /*Media queries phoneContent*/
+  .phoneContent {
+    width: 70%;
+  }
+}
+
+@media (max-width: 368px) {
+  /*Media queries TV*/
+  .tvContent {
+    width: 100%;
+  }
+  /*Media queries computer*/
+  .computerContent {
+    width: 100%;
+  }
+  /*Media queries Kids*/
+  .kidsContent {
+    width: 100%;
+  }
+  /*Media queries phoneContent*/
+  .phoneContent {
+    width: 100%;
+  }
+}

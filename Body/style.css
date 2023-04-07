@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  letter-spacing: 0 !important;
 }
 
 /* TV section */
@@ -209,7 +210,6 @@
   width: 100%;
   z-index: 1;
   max-width: 600px;
-
 }
 
 .container_box {
@@ -218,7 +218,8 @@
   text-align: center;
   position: relative;
   bottom: 120px;
-  width: 60%;
+  width: 55%;
+  height: 100px;
   min-width: 15rem;
   margin: 0 auto;
   padding: 0.5rem;
@@ -228,11 +229,14 @@
   border-radius: 0.75rem;
   z-index: 1;
 }
+.box_gif {
+  width: 33%;
+}
 
 .boxPoster {
   margin-right: 1rem;
   flex-grow: 0;
-
+  width: 33%;
 }
 
 #box_img {
@@ -245,6 +249,7 @@
   flex-direction: column;
   text-align: left;
   flex-grow: 1;
+  width: 33%;
 }
 
 .box_text1 {
@@ -286,7 +291,7 @@
   }
 
   .tvContent {
-    width: 100%;
+    width: 55%;
   }
 
   /*Media queries computer*/
@@ -316,6 +321,93 @@
   }
 
   .computerContent {
+    width: 50%;
+  }
+
+  /*Media queries Kids*/
+  .container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .textContent3 {
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  .principalText3 {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  .secondaryText3 {
+    margin-top: 16px;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+  .kidsContent {
+    width: 50%;
+  }
+  /*Media queries phoneSection*/
+  .container4 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .textContent4 {
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  .principalText4 {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  .secondaryText4 {
+    margin-top: 16px;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+  .phoneContent {
+    width: 50%;
+  }
+}
+
+@media (max-width: 720px) {
+  /*Media queries TV*/
+  .tvContent {
+    width: 70%;
+  }
+  /*Media queries computer*/
+  .computerContent {
+    width: 70%;
+  }
+  /*Media queries Kids*/
+  .kidsContent {
+    width: 70%;
+  }
+  /*Media queries phoneContent*/
+  .phoneContent {
+    width: 70%;
+  }
+}
+
+@media (max-width: 368px) {
+  /*Media queries TV*/
+  .tvContent {
+    width: 100%;
+  }
+  /*Media queries computer*/
+  .computerContent {
+    width: 100%;
+  }
+  /*Media queries Kids*/
+  .kidsContent {
+    width: 100%;
+  }
+  /*Media queries phoneContent*/
+  .phoneContent {
     width: 100%;
   }
 }

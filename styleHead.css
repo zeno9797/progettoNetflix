@@ -66,7 +66,7 @@ header {
     font-size: 0.9rem;
     font-weight: 500;
     min-height: 2rem;
-    padding: 0.25rem 0.6rem 0.25rem 2rem;
+    padding: 0.4rem 0.6rem 0.25rem 2rem;
     background: rgba(61, 58, 58, 0.105);
     border: 0.2px solid rgba(255, 255, 255, 0.26);
     border-radius: 0.25rem;
@@ -231,7 +231,7 @@ p {
 
 @media screen and (max-width: 600px) {
     .select-language {
-        width: 3.7rem;
+        width: 3.2rem;
     }
 
     .img-globo {

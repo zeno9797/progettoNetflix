@@ -1,0 +1,174 @@
+
+.faq {
+    background-color: black;
+    height: 100vh;
+}
+
+.faq h1 {
+    font-size: 3.125rem;
+    text-align: center;
+    color: white;
+    padding: 40px;
+}
+
+.questions {
+    color: white;
+    max-width: 1146px;
+    margin: 0 auto;
+    font-size: 1.625rem;
+}
+
+.question {
+    position: relative;
+    background-color: rgba(45, 45, 45, 1);
+    margin-bottom: 0.6rem;
+}
+
+.question svg {
+    width: 40px;
+    height: 40px;
+    right: 30px;
+    top: 20px;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.question .ask {
+    display: block;
+    padding: 24px 24px;
+    
+    cursor: pointer;
+}
+
+.answer {
+    border-top: 1px solid black;
+    padding: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+
+/* se chekkato, stylerà l'answer */
+.question input:checked~.answer {
+    padding: 20px 30px;
+    max-height: 600px;
+
+}
+
+/* rotazione CROSS SVG al click */
+.question input[type="checkbox"]:checked~.ask svg {
+    transform: rotate(180deg);
+}
+
+/* Checkbox hidden */
+.question input[type="checkbox"] {
+    display: none;
+}
+
+.more {
+    color: white;
+}
+
+label:hover {
+    background-color: rgb(63, 62, 62);
+}
+
+/* ---INPUT EMAIL AND START BUTTON---  */
+
+
+
+/* ---- INPUT FORM EMAIL ---- */
+
+.form-email {
+    width: 80%;
+    position: relative;
+    margin: 1.7rem auto 0;
+    max-width: 37.625rem;
+    display: flex;
+    border: 0 solid transparent;
+}
+
+.input-container {
+    width: 100%;
+}
+
+.form-email input {
+    width: 100%;
+    font-size: 1.1rem;
+    color: white;
+    padding: 1.5rem 1.5rem 0.7rem;
+    background: rgba(35, 35, 35, 0.534);
+    border: 0.2px solid rgba(255, 255, 255, 0.522);
+    border-radius: 0.25rem;
+}
+
+
+.form-email span {
+    pointer-events: none;
+    position: absolute;
+    top: 1.15rem;
+    left: 2rem;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    transition: 0.2s ease;
+}
+
+.form-email input:not(:placeholder-shown)~span {
+    font-size: 13px;
+    top: 3px;
+}
+
+.form-email input:focus~span {
+    font-size: 13px;
+    top: 3px;
+}
+
+/* -------- START-BUTTON -------- */
+
+.start-button {
+    width: 22%;
+    min-width: 7rem;
+    margin-left: 0.67rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    min-height: 3.5rem;
+    padding: 15px 2.5rem 0.5rem 1.5rem;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    border-radius: 0.25rem;
+    border: 0 solid transparent;
+    display: flex;
+}
+
+.img-arrow {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 1rem;
+}
+
+.start-button:hover {
+    background: rgb(193, 17, 25);
+    cursor: pointer;
+}
+
+
+
+
+@media only screen and (max-width: 959px) {
+    .question svg {
+        margin-left: 10px;
+        padding: 10px 0px;
+        width: 20px;
+        height: 20px;
+    }
+
+    label{
+        margin-right: 28px;
+        font-size: 1.3rem;
+    }
+    .faq{
+        padding: 0 20px;
+    }
+}
+

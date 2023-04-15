@@ -1,19 +1,18 @@
-
 .faq {
     background-color: black;
-    height: 100vh;
+    border-bottom: 9px solid #222;
 }
 
-.faq h1 {
+.faqTitle {
     font-size: 3.125rem;
     text-align: center;
     color: white;
-    padding: 40px;
+    padding: 30px;
 }
 
 .questions {
     color: white;
-    max-width: 1146px;
+    max-width: 986px;
     margin: 0 auto;
     font-size: 1.625rem;
 }
@@ -24,7 +23,7 @@
     margin-bottom: 0.6rem;
 }
 
-.question svg {
+.question .cross {
     width: 40px;
     height: 40px;
     right: 30px;
@@ -36,7 +35,6 @@
 .question .ask {
     display: block;
     padding: 24px 24px;
-    
     cursor: pointer;
 }
 
@@ -57,7 +55,7 @@
 }
 
 /* rotazione CROSS SVG al click */
-.question input[type="checkbox"]:checked~.ask svg {
+.question input[type="checkbox"]:checked~.ask .cross {
     transform: rotate(180deg);
 }
 
@@ -87,6 +85,7 @@ label:hover {
     max-width: 37.625rem;
     display: flex;
     border: 0 solid transparent;
+    padding-bottom: 70px;
 }
 
 .input-container {
@@ -156,19 +155,19 @@ label:hover {
 
 
 @media only screen and (max-width: 959px) {
-    .question svg {
+    .question .cross {
         margin-left: 10px;
         padding: 10px 0px;
         width: 20px;
         height: 20px;
     }
 
-    label{
+    label {
         margin-right: 28px;
         font-size: 1.3rem;
     }
-    .faq{
+
+    .faq {
         padding: 0 20px;
     }
 }
-

@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-
 }
 
 /* --- CONTAINER AND BACKGROUND ---  */
@@ -114,17 +113,17 @@ header {
     margin: 5rem 1.7rem 2rem;
 }
 
-h1,
-p {
+.headerTitle1,
+.headerP {
     margin: 20px 0;
 
 }
 
-h1 {
+.headerTitle1 {
     font-size: 3.4rem;
 }
 
-p {
+.headerP {
     font-size: 1.4rem;
 }
 
@@ -246,11 +245,11 @@ p {
         text-align: left;
     }
 
-    h1 {
+    .headerTitle1 {
         font-size: 2.1rem;
     }
 
-    p {
+    .headerP {
 
         font-size: 1rem;
     }
@@ -284,11 +283,11 @@ p {
 
     }
 
-    h1 {
+    .headerTitle1 {
         font-size: 2.4rem;
     }
 
-    p {
+    .headerP {
 
         font-size: 1.2rem;
     }

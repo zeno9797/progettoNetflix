@@ -292,3 +292,43 @@ header {
         font-size: 1.2rem;
     }
 }
+
+
+@media only screen and (max-height: 760px){
+    .headerTitle1  {
+        font-size: 1.5rem;
+    }
+
+    .headerP {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-height: 1000px) {
+
+
+    .button-anchor {
+        font-size: 1.4rem;
+    }
+
+    .titles {
+        margin-top: 15rem;
+    }
+
+    .headerTitle1  {
+        font-size: 4rem;
+    }
+
+    .headerP {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-height: 1000px) {
+    .form-email {
+        top: 50px;
+    }
+
+  
+}
+

@@ -47,13 +47,13 @@
 }
 
 /* se chekkato, stylerà l'answer */
-.question input:checked ~ .answer {
+.question input:checked~.answer {
   padding: 20px 30px;
   max-height: 600px;
 }
 
 /* rotazione CROSS SVG al click */
-.question input[type="checkbox"]:checked ~ .ask .cross {
+.question input[type="checkbox"]:checked~.ask .cross {
   transform: rotate(180deg);
 }
 
@@ -66,7 +66,7 @@
   color: white;
 }
 
-label:hover {
+.question:hover {
   background-color: rgb(63, 62, 62);
 }
 
@@ -108,12 +108,12 @@ label:hover {
   transition: 0.2s ease;
 }
 
-.form-email input:not(:placeholder-shown) ~ span {
+.form-email input:not(:placeholder-shown)~span {
   font-size: 13px;
   top: 3px;
 }
 
-.form-email input:focus ~ span {
+.form-email input:focus~span {
   font-size: 13px;
   top: 3px;
 }
@@ -148,8 +148,7 @@ label:hover {
 
 @media only screen and (max-width: 959px) {
   .question .cross {
-    position: absolute;
-    top: 35%;
+    margin-top: 8px;
     margin-left: 10px;
     width: 20px;
     height: 20px;

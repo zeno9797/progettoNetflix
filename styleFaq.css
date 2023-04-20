@@ -1,173 +1,166 @@
 .faq {
-    background-color: black;
-    border-bottom: 9px solid #222;
+  background-color: black;
+  border-bottom: 9px solid #222;
 }
 
 .faqTitle {
-    font-size: 3.125rem;
-    text-align: center;
-    color: white;
-    padding: 30px;
+  font-size: 3.125rem;
+  text-align: center;
+  color: white;
+  padding: 30px;
 }
 
 .questions {
-    color: white;
-    max-width: 986px;
-    margin: 0 auto;
-    font-size: 1.625rem;
+  color: white;
+  max-width: 986px;
+  margin: 0 auto;
+  font-size: 1.625rem;
 }
 
 .question {
-    position: relative;
-    background-color: rgba(45, 45, 45, 1);
-    margin-bottom: 0.6rem;
+  position: relative;
+  background-color: rgba(45, 45, 45, 1);
+  margin-bottom: 0.6rem;
 }
 
 .question .cross {
-    width: 40px;
-    height: 40px;
-    right: 30px;
-    top: 20px;
-    position: absolute;
-    transform: rotate(45deg);
+  width: 40px;
+  height: 40px;
+  right: 30px;
+  top: 20px;
+  position: absolute;
+  transform: rotate(45deg);
 }
 
 .question .ask {
-    display: block;
-    padding: 24px 24px;
-    cursor: pointer;
+  display: block;
+  padding: 24px 24px;
+  cursor: pointer;
 }
 
 .answer {
-    border-top: 1px solid black;
-    padding: 0 30px;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3s ease;
+  border-top: 1px solid black;
+  padding: 0 30px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-
 /* se chekkato, stylerà l'answer */
-.question input:checked~.answer {
-    padding: 20px 30px;
-    max-height: 600px;
-
+.question input:checked ~ .answer {
+  padding: 20px 30px;
+  max-height: 600px;
 }
 
 /* rotazione CROSS SVG al click */
-.question input[type="checkbox"]:checked~.ask .cross {
-    transform: rotate(180deg);
+.question input[type="checkbox"]:checked ~ .ask .cross {
+  transform: rotate(180deg);
 }
 
 /* Checkbox hidden */
 .question input[type="checkbox"] {
-    display: none;
+  display: none;
 }
 
 .more {
-    color: white;
+  color: white;
 }
 
 label:hover {
-    background-color: rgb(63, 62, 62);
+  background-color: rgb(63, 62, 62);
 }
 
 /* ---INPUT EMAIL AND START BUTTON---  */
 
-
-
 /* ---- INPUT FORM EMAIL ---- */
 
 .form-email {
-    width: 80%;
-    position: relative;
-    margin: 1.7rem auto 0;
-    max-width: 37.625rem;
-    display: flex;
-    border: 0 solid transparent;
-    padding-bottom: 70px;
+  width: 80%;
+  position: relative;
+  margin: 1.7rem auto 0;
+  max-width: 37.625rem;
+  display: flex;
+  border: 0 solid transparent;
+  padding-bottom: 70px;
 }
 
 .input-container {
-    width: 100%;
+  width: 100%;
 }
 
 .form-email input {
-    width: 100%;
-    font-size: 1.1rem;
-    color: white;
-    padding: 1.5rem 1.5rem 0.7rem;
-    background: rgba(35, 35, 35, 0.534);
-    border: 0.2px solid rgba(255, 255, 255, 0.522);
-    border-radius: 0.25rem;
+  width: 100%;
+  font-size: 1.1rem;
+  color: white;
+  padding: 1.5rem 1.5rem 0.7rem;
+  background: rgba(35, 35, 35, 0.534);
+  border: 0.2px solid rgba(255, 255, 255, 0.522);
+  border-radius: 0.25rem;
 }
-
 
 .form-email span {
-    pointer-events: none;
-    position: absolute;
-    top: 1.15rem;
-    left: 2rem;
-    font-size: 1.1rem;
-    color: rgb(255, 255, 255);
-    transition: 0.2s ease;
+  pointer-events: none;
+  position: absolute;
+  top: 1.15rem;
+  left: 2rem;
+  font-size: 1.1rem;
+  color: rgb(255, 255, 255);
+  transition: 0.2s ease;
 }
 
-.form-email input:not(:placeholder-shown)~span {
-    font-size: 13px;
-    top: 3px;
+.form-email input:not(:placeholder-shown) ~ span {
+  font-size: 13px;
+  top: 3px;
 }
 
-.form-email input:focus~span {
-    font-size: 13px;
-    top: 3px;
+.form-email input:focus ~ span {
+  font-size: 13px;
+  top: 3px;
 }
 
 /* -------- START-BUTTON -------- */
 
 .start-button {
-    width: 22%;
-    min-width: 7rem;
-    margin-left: 0.67rem;
-    font-size: 1.3rem;
-    font-weight: 600;
-    min-height: 3.5rem;
-    padding: 15px 2.5rem 0.5rem 1.5rem;
-    background: rgb(229, 9, 20);
-    color: rgb(255, 255, 255);
-    border-radius: 0.25rem;
-    border: 0 solid transparent;
-    display: flex;
+  width: 22%;
+  min-width: 7rem;
+  margin-left: 0.67rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  min-height: 3.5rem;
+  padding: 15px 2.5rem 0.5rem 1.5rem;
+  background: rgb(229, 9, 20);
+  color: rgb(255, 255, 255);
+  border-radius: 0.25rem;
+  border: 0 solid transparent;
+  display: flex;
 }
 
 .img-arrow {
-    margin-top: 5px;
-    margin-left: 5px;
-    width: 1rem;
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 1rem;
 }
 
 .start-button:hover {
-    background: rgb(193, 17, 25);
-    cursor: pointer;
+  background: rgb(193, 17, 25);
+  cursor: pointer;
 }
 
-
-
-
 @media only screen and (max-width: 959px) {
-    .question .cross {
-        margin-left: 10px;
-        padding: 10px 0px;
-        width: 20px;
-        height: 20px;
-    }
+  .question .cross {
+    position: absolute;
+    top: 35%;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+  }
 
-    label {
-        margin-right: 28px;
-        font-size: 1.3rem;
-    }
+  label {
+    margin-right: 28px;
+    font-size: 1.3rem;
+  }
 
-    .faq {
-        padding: 0 20px;
-    }
+  .faq {
+    padding: 0 20px;
+  }
 }
